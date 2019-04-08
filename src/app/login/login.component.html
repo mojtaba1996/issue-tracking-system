@@ -1,0 +1,16 @@
+<div class="loginForm" >
+    <form [formGroup] = loginForm (ngSubmit) = "onSubmit()" >
+        <label>
+            نام کاربری:
+            <input type="text" formControlName = "username">
+        </label>
+        <label>
+            رمز عبور:
+            <input type="password" formControlName = "password" >
+        </label>
+        <button type="submit" [disabled]="!loginForm.valid">login</button>
+    </form>
+    <div id = "areYouSignedUp">
+        <a routerLink = "/signup">عضو نیستی؟</a>
+    </div>
+</div>

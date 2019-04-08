@@ -1,0 +1,28 @@
+<div class="signUpForm" >
+  <form [formGroup] = signUpForm (ngSubmit) = "onSubmit()" >
+      <label>
+        نام:
+        <input type="text" formControlName = "firstname">
+      </label>
+      <label>
+        نام خانوادگی:
+        <input type="text" formControlName = "lastname">
+      </label>
+      <label>
+        نقش:
+        <input type="text" formControlName = "role">
+      </label>
+      <label>
+        نام کاربری:
+        <input type="text" formControlName = "username">
+      </label>
+      <label>
+        رمز عبور:
+        <input type="password" formControlName = "password" >
+      </label>
+      <button type="submit" [disabled]="!signUpForm.valid">login</button>
+  </form>
+  <div>
+      <a routerLink = "/login">قبلا عضو شدی؟</a>
+  </div>
+</div>

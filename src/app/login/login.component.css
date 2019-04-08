@@ -1,0 +1,27 @@
+div.loginForm{
+    padding: 1vw;
+    background-color: aqua;
+    width: 30vw;
+    height: 13vw;
+    margin: auto;
+    direction: rtl;
+    text-align: center;
+}
+label{
+    padding: 1vw;
+    display: block;
+}
+input{
+    float: left;
+    margin-left: 1vw;
+}
+button{
+    margin: 1vw 2vw;
+}
+a{
+    margin: 0vw 1vw;
+    text-decoration: none;
+}
+#areYouSignedUp{
+    padding: 1vw 3vw;
+}
