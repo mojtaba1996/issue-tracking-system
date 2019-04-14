@@ -1,6 +1,6 @@
-<div class="signUpForm" >
-  <h3>عضویت در سامانه</h3>
-  <form [formGroup] = signUpForm (ngSubmit) = "onSubmit()" >
+<div class="editProfileForm" >
+  <h3>ویرایش پروفایل</h3>
+  <form [formGroup] = editProfileForm (ngSubmit) = "onSubmit()" >
       <label>
         نام:
         <input type="text" formControlName = "firstname">
@@ -11,16 +11,11 @@
       </label>
       <label>
         نقش:
-        <select formControlName = "role">
-          <option value="">انتخاب کنید</option>
-          <option *ngFor = "let role of selectionRoles" [ngValue]="role">
-            {{role}}
-          </option>
-        </select>
+        <input type="text" formControlName = "role" disabled>
       </label>
       <label>
         نام کاربری:
-        <input type="text" formControlName = "username">
+        <input type="text" formControlName = "username" disabled>
       </label>
       <label>
         رمز عبور:
@@ -30,9 +25,6 @@
         تکرار رمز عبور:
         <input type="password" formControlName = "passwordAgain" >
       </label>
-      <button type="submit" [disabled]="!signUpForm.valid">عضویت</button>
+      <button type="submit" [disabled]="!signUpForm.valid">ویرایش</button>
   </form>
-  <div>
-      <a routerLink = "/login">قبلا عضو شدی؟</a>
-  </div>
 </div>

@@ -1,9 +1,9 @@
 @import '../app.component.css';
-div.signUpForm{
+div#postACase{
     padding: 1vw;
     background-color: aqua;
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin: auto;
     direction: rtl;
     text-align: center;

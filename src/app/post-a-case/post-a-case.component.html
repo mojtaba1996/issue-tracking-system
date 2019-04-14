@@ -1,0 +1,29 @@
+<div id="postACase" >
+  <h3>ثبت مورد جدید</h3>
+  <form [formGroup] = postACaseForm (ngSubmit) = "onSubmit()" >
+      <label>
+        موضوع:
+        <select formControlName = "topic">
+            <option value="">انتخاب کنید</option>
+            <option *ngFor = "let topic of topics" [ngValue]="topic">
+              {{topic}}
+            </option>
+          </select>
+      </label>
+      <label>
+        متن توضیحات:
+        <textarea formControlName = "content"></textarea>
+      </label>
+      <br><br><br>
+      <label>
+        مسئول رسیدگی:
+        <select formControlName = "responsibleUser">
+          <option value="">انتخاب کنید</option>
+          <option *ngFor = "let responsibleUser of responsibleUsers">
+            {{responsibleUser.id}}
+          </option>
+        </select>
+      </label>
+      <button type="submit" [disabled]="!postACaseForm.valid">ثبت</button>
+  </form>
+</div>

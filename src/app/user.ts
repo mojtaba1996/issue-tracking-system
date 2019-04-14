@@ -3,11 +3,13 @@ export class User {
     username: string;
     firstName: string;
     lastName: string;
-    role: roles;
+    password : string;
+    role: string;
+    confirmed : boolean;
   }
-export enum roles{
-    EMPLOYEE,
-    STUDENT,
-    TEACHER,
-    MANAGER
+export const roles = {
+    EMPLOYEE : 'کارمند',
+    STUDENT : 'دانشجو',
+    TEACHER : 'استاد',
+    MANAGER : 'مدیر',
 }

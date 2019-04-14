@@ -1,0 +1,37 @@
+<div>
+  <table>
+    <tr>
+      <th>نام</th>
+      <th>نام خانوادگی</th>
+      <th>نام کاربری</th>
+      <th>نقش</th>
+      <th>وضعیت تایید</th>
+    </tr>
+    <tr *ngFor = "let user of notConfirmedUsers">
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.role}}</td>
+      <td>{{user.confirmed}}</td>
+      <td class="button" (click) = "confirm(user)">تایید</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>نام</th>
+      <th>نام خانوادگی</th>
+      <th>نام کاربری</th>
+      <th>نقش</th>
+      <th>وضعیت تایید</th>
+    </tr>
+    <tr *ngFor = "let user of confirmedUsers">
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.role}}</td>
+      <td>{{user.confirmed}}</td>
+      <td class="button" (click) = "reject(user)">عدم تایید</td>
+    </tr>
+  </table>
+</div>

@@ -1,4 +1,5 @@
 <div class="loginForm" >
+    <h3>ورود به سامانه</h3>
     <form [formGroup] = loginForm (ngSubmit) = "onSubmit()" >
         <label>
             نام کاربری:
@@ -8,7 +9,7 @@
             رمز عبور:
             <input type="password" formControlName = "password" >
         </label>
-        <button type="submit" [disabled]="!loginForm.valid">login</button>
+        <button type="submit" [disabled]="!loginForm.valid">ورود</button>
     </form>
     <div id = "areYouSignedUp">
         <a routerLink = "/signup">عضو نیستی؟</a>

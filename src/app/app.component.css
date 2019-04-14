@@ -1,3 +1,42 @@
 h1{
     text-align: center;
 }
+form label{
+    padding: 1vw;
+    display: block;
+    text-align: right;
+}
+form input, form select, form textarea{
+    float: left;
+    margin-left: 1vw;
+}
+form textarea{
+    width: 20vw;
+    height: 4vw
+}
+form button{
+    margin: 1vw 2vw;
+}
+form a{
+    margin: 0vw 1vw;
+    text-decoration: none;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2vw 0vw;
+}
+th, td {
+    padding: 15px;
+}
+td.button{
+    background-color: #ddd;
+    border: 2px solid #aaa;
+}
+td.button:hover{
+    cursor: pointer;
+}
